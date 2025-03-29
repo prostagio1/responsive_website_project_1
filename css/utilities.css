@@ -1,0 +1,32 @@
+.container {
+  max-width: 1264px;
+  margin: 0 auto;
+}
+
+.my-4 {
+  margin-top: 4rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  width: 128px;
+  height: 32px;
+  background-color: #3c8ff0;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(0.98);
+}
+
+/* WORk */
+.work {
+  flex-direction: column;
+  column-gap: 42px;
+}
