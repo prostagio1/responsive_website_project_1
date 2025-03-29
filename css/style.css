@@ -11,6 +11,12 @@ body {
   color: #fff;
   padding: 0 20px;
 }
+.navbar-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid red;
+}
 .navbar a {
   color: #fff;
   font-size: 16px;
@@ -18,6 +24,9 @@ body {
 .navbar ul {
   height: 100%;
   column-gap: 32px;
+}
+.burger {
+  display: none;
 }
 
 /* Showcase */
@@ -32,6 +41,7 @@ body {
   height: 316px;
   align-items: flex-start;
   justify-content: space-evenly;
+  padding: 10px;
 }
 .content h1 {
   font-size: 56px;
@@ -56,6 +66,10 @@ body {
   width: 680px;
   height: 317px;
   background-image: url("../images/iphone.png");
+  background-size: cover; /* Scale the image to be fully visible */
+  background-position: center; /* Center the image within the container */
+  background-repeat: no-repeat;
+  display: block;
 }
 
 /* Socials */
@@ -75,7 +89,7 @@ body {
   font-size: 40px;
 }
 .image-container {
-  min-width: 680px;
+  width: 680px;
   height: 364px;
   background-color: #0070ba;
 }
@@ -88,7 +102,7 @@ body {
   align-items: flex-start;
   row-gap: 40px;
   justify-content: center;
-  width: 456px;
+  max-width: 456px;
 }
 .content-container h2 {
   font-size: 32px;
@@ -101,4 +115,49 @@ body {
 .content-2 {
   margin-top: 41px;
   flex-wrap: wrap;
+  padding: 10px;
+}
+
+@media (max-width: 1200px) {
+  .showcase {
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+  }
+  .work {
+    align-items: center;
+    justify-content: center;
+    row-gap: 50px;
+  }
+  .content-2 {
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .display {
+    width: 500px;
+  }
+  .image-container {
+    width: 550px;
+  }
+}
+@media (max-width: 600px) {
+  .display {
+    width: 400px;
+  }
+  .image-container {
+    width: 450px;
+  }
+  nav,
+  .purchase-button {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .navbar {
+    border: 1px solid red;
+  }
 }
